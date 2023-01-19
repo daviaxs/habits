@@ -3,6 +3,7 @@ const nlwSetup = new NLWSetup(form)
 const button = document.querySelector('.button-add')
 
 button.addEventListener('click', add)
+form.addEventListener("change", save)
 
 function add() {
   const today = new Date().toLocaleDateString('pt-br').slice(0, -5)
@@ -15,13 +16,13 @@ function add() {
   nlwSetup.addDay(today)
 }
 
-// const data = {
-//   exercise: ["01-01", "01-02", "01-03", "01-04", "01-07", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18"],
-//   hydrate: ["01-01", "01-04", "01-08"]
-// }
+function save() {
+  localStorage.setItem('Habits_Storage_Save', JSON.stringify(nlwSetup.data))
+}
 
-// nlwSetup.setData(data)
-// nlwSetup.load()
+const data = JSON.parse(localStorage.getItem('Habits_Storage_Save')) || {}
+nlwSetup.setData(data)
+nlwSetup.load()
 
 // sistema Switch
 const html = document.documentElement
