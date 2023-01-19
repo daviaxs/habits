@@ -1,13 +1,17 @@
 @media (max-width: 720px) {
+  body {
+    width: 100%;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed;
     background: var(--bg-color);
     width: 100%;
     gap: 5%;
+    position: fixed;
   }
 
   #logo-habit {
