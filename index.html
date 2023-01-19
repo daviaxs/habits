@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit's</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <header>
+    <img id="logo-habit" src="utilities/svgs/logo-habits.svg" alt="Habits logo">
+    
+    <div id="switch" onclick="toggleMode()">
+      <button></button>
+      <span></span>
+    </div>
+
+    <button>
+      <img src="utilities/svgs/add.svg" alt="Icone de mais">
+      <div>
+        Registrar meu dia
+      </div>
+    </button>
+  </header>
+
+  <form id="form-habits">
+
+    <div class="icons-habits">
+      <div class="habit" data-name="exercise">💪</div>
+      <div class="habit" data-name="hydrate">🍷</div>
+      <div class="habit" data-name="toStudy">✍</div>
+      <div class="habit" data-name="food">🍎</div>
+      <div class="habit" data-name="rest">💤</div>
+    </div>
+
+    <div class="days"></div>
+
+  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
