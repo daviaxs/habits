@@ -5,3 +5,18 @@
 
   font-family: 'Inter', sans-serif;
 }
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--stroke-color);
+  border-radius: 20px;
+}

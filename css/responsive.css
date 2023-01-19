@@ -1,4 +1,26 @@
 @media (max-width: 720px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    background: var(--bg-color);
+    width: 100%;
+    gap: 5%;
+  }
+
+  #logo-habit {
+    height: 60px;
+  }
+
+  #form-habits {
+    display: flex;
+    color: var(--button-text-color);
+    padding: 170px 48px 48px 48px;
+    width: fit-content;
+  }
+
   button div {
     display: none;
   }

@@ -11,6 +11,7 @@
   --switch-bg-color-: #ffffff;
   --input-color: #18181B;
   --input-color-border: #27272A;
+  --scrollbar-bg: #1e1e21;
 }
 
 .light {
@@ -24,6 +25,7 @@
   --switch-bg-color-: #8B5CF6;
   --input-color: #71717A;
   --input-color-border: #52525B;
+  --scrollbar-bg: #babac5;
 }
 
 body {
@@ -178,6 +180,7 @@ input:checked {
   from {
     left: 0;
   }
+
   to {
     left: 50%;
   }
@@ -187,7 +190,9 @@ input:checked {
   from {
     left: 50%;
   }
+
   to {
     left: 0;
   }
 }
+
